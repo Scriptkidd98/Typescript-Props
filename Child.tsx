@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 
 type Props = {
@@ -6,11 +6,12 @@ type Props = {
     setName : (val: string) => void;
 }
 
-const Child: React.FC = () => {
-    const [name, setName] = useState<string>('Child');
+const Child: React.FC<Props> = ({name, setName}) => {
+    console.log(name)
   return (
     <div>
         <p>This is a child component</p>
+        <button onClick={() => setName('New Parent State')}>Change Parent State</button>
     </div>
   )
 }
