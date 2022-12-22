@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Child = () => {
+const Child:React.FC = () => {
   return (
-    <div>Child</div>
+    <div>
+        <p>This is a child component</p>
+    </div>
   )
 }
 

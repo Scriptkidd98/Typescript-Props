@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Parent = () => {
+const Parent:React.FC = () => {
   return (
-    <div>Parent</div>
+    <div>
+        <p>This is a parent element</p>
+    </div>
   )
 }
 
